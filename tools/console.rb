@@ -12,5 +12,6 @@ ride1 = Ride.new(hel, mar, 10.0)
 ride2 = Ride.new(prin, mar, 200.0)
 ride3 = Ride.new(hel, cass, 120.0)
 ride4 = Ride.new(hel, mar, 30.0)
+ride5 = Ride.new(prin, cass, 40.0)
 
 binding.pry
