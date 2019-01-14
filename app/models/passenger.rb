@@ -14,7 +14,7 @@ class Passenger
   def self.all
     @@all
   end
-  
+
   def rides
     Ride.all.select {|ride| ride.passenger == self}
   end
@@ -32,8 +32,9 @@ class Passenger
   end
 
   def self.premium_members
-    premiums = Ride.all.select {|ride| ride.distance > 100}
-    premiums.map {|ride| ride.passenger}
+    premiums = Ride.all.select {|ride|
+      ride.passenger.total_distance > 100}
+    premiums.map {|ride| ride.passenger}.uniq
   end
 
 end
