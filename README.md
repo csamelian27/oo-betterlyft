@@ -1,4 +1,4 @@
-# BetterLyft™ 
+# BetterLyft™
 
 ## Deliverables
 You are building an app for a Lyft/Uber competitor. The models that you will use for your application are: Passenger, Driver, and Ride.
@@ -7,12 +7,12 @@ You are building an app for a Lyft/Uber competitor. The models that you will use
   - A Passenger has many rides
   - A Driver has many rides
   - A Ride belongs to a passenger and a driver
-  
+
 Always start by drawing out the relationship either on a whiteboard or piece of paper. Think about how each of these models will be connected. From there then begin writing code.
 
 ## Deliverables
 
-We'd like for you build out the following methods for each class. As you work, we want to make sure we are testing our code every step of the way. We've made a file for you to test out your methods. Make sure you `bundle install` first. Then, you can run the command `ruby tools/console.rb` and it will run that file, along with all of the variables or actions you declare in the `tools/console.rb`.
+We'd like for you build out the following methods for each class. As you work, we want to make sure we are testing our code every step of the way. We've made a file for you to test out your methods. Make sure you `bundle install` first. Then, you can run the command `ruby tools/console.rb` and it will run that file, along with all of the variables or actions you declare in the `tools/console.rb`.co
 
 #### Passenger
 A Passenger should be initialized with a name as a string. After the Passenger has been initialized, it shouldn't be changed.
@@ -39,7 +39,7 @@ A Ride should be initialized with a driver (as a Driver object), a passenger (as
   - Returns the distance of the ride
 - `Ride.average_distance`
   - Returns the average distance across ALL rides
-  
+
 #### Driver
 A Driver should be initialized with a name as a string.
 - `Driver#name`
@@ -52,4 +52,3 @@ A Driver should be initialized with a name as a string.
   - Returns an array of all Drivers
 - `Driver.mileage_cap(distance)`
   - Takes an argument of a distance (float) and returns an array of all Drivers who have driven over the mileage
-

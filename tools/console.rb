@@ -4,7 +4,13 @@ def reload
   load 'config/environment.rb'
 end
 
-
-# Put your variables here~!
+mar = Passenger.new("Mar")
+cass = Passenger.new("Cassidy")
+hel = Driver.new("Helen")
+prin = Driver.new("Prince")
+ride1 = Ride.new(hel, mar, 10.0)
+ride2 = Ride.new(prin, mar, 200.0)
+ride3 = Ride.new(hel, cass, 120.0)
+ride4 = Ride.new(hel, mar, 30.0)
 
 binding.pry
